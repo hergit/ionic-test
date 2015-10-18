@@ -25,9 +25,10 @@ var openFB = (function () {
 
     // Default OAuth redirect URL. Can be overriden in init()
         oauthRedirectURL = baseURL + '/oauthcallback.html',
-
+        //oauthRedirectURL = 'http://hangman.hernan.org/oauthcallback.html',
     // Default Cordova OAuth redirect URL. Can be overriden in init()
-        cordovaOAuthRedirectURL = "https://www.facebook.com/connect/login_success.html",
+        //cordovaOAuthRedirectURL = "https://www.facebook.com/connect/login_success.html",
+        cordovaOAuthRedirectURL = baseURL + '/oauthcallback.html',
 
     // Default Logout redirect URL. Can be overriden in init()
         logoutRedirectURL = baseURL + '/logoutcallback.html',
@@ -41,6 +42,8 @@ var openFB = (function () {
 
     // Used in the exit event handler to identify if the login has already been processed elsewhere (in the oauthCallback function)
         loginProcessed;
+
+        alert(cordovaOAuthRedirectURL);
 
     // MAKE SURE YOU INCLUDE <script src="cordova.js"></script> IN YOUR index.html, OTHERWISE runningInCordova will always by false.
     // You don't need to (and should not) add the actual cordova.js file to your file system: it will be added automatically
