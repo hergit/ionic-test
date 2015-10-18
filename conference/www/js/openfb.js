@@ -27,8 +27,8 @@ var openFB = (function () {
         oauthRedirectURL = baseURL + '/oauthcallback.html',
         //oauthRedirectURL = 'http://hangman.hernan.org/oauthcallback.html',
     // Default Cordova OAuth redirect URL. Can be overriden in init()
-        //cordovaOAuthRedirectURL = "https://www.facebook.com/connect/login_success.html",
-        cordovaOAuthRedirectURL = baseURL + '/oauthcallback.html',
+        cordovaOAuthRedirectURL = "https://www.facebook.com/connect/login_success.html",
+        //cordovaOAuthRedirectURL = baseURL + '/oauthcallback.html',
 
     // Default Logout redirect URL. Can be overriden in init()
         logoutRedirectURL = baseURL + '/logoutcallback.html',
